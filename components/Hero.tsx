@@ -1,17 +1,14 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="https://images.unsplash.com/photo-1554224311-beee460c201f?w=1920&q=80"
           alt="Financial Services"
-          fill
-          className="object-cover"
-          priority
+          className="w-full h-full object-cover"
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
